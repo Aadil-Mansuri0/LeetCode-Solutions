@@ -1,3 +1,3 @@
 # Other Topics
 
-No verified problems imported yet. Add canonical links here as other problems are imported.
+No additional problems categorized here yet. See the [Arrays index](arrays.md) for the first imported problem.
