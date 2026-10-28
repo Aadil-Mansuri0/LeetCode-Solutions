@@ -3,8 +3,9 @@
 ## Added solutions
 
 - [x] [LeetCode 1 — Two Sum](solutions/0001-two-sum/README.md) — Easy · Array / Hash Table · Brute force
+- [x] [LeetCode 1664 — Ways to Make a Fair Array](solutions/1664-ways-to-make-a-fair-array/README.md) — Medium · Array / Prefix Sum · Running sums
 
-**Solutions currently in this repository: 1**
+**Solutions currently in this repository: 2**
 
 ## Adding the next problem
 
