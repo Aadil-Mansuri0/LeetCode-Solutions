@@ -1,25 +1,40 @@
 # LeetCode Solutions
 
-A personal, topic-organized archive of my LeetCode practice in **C++**.
+A clean, manually maintained archive of my LeetCode practice in **C++**, organized by problem and topic.
 
 - **LeetCode:** [aadil_grind](https://leetcode.com/u/aadil_grind/)
-- **GitHub:** [Aadil-Mansuri0](https://github.com/Aadil-Mansuri0)
-- **Reported previous practice:** approximately 195 solved questions; historical inventory is being verified and imported incrementally.
+- **GitHub profile:** [Aadil-Mansuri0](https://github.com/Aadil-Mansuri0)
 
-## Repository rules
+## Repository structure
 
-1. **One canonical folder/file per problem.** Use the LeetCode problem number and slug, e.g. `solutions/0001-two-sum/solution.cpp`. Topic indexes link to this file; they do not copy it.
-2. **No duplicate folders for re-submissions.** Re-submitting a previously solved problem updates the existing canonical solution.
-3. **Better solution later?** Add a clearly labelled approach inside the same problem folder. Keep earlier approaches when useful; do not duplicate the problem.
-4. **Track verified history only.** Never invent problem titles or claim reconstructed code is the user's original submission.
-5. **Historical backlog pace:** target one previously solved problem per day when the exact problem and source are available.
-6. **Future accepted submissions:** can be added manually from the code/details supplied by the user. Browser-extension sync is optional and is not assumed active.
+Each problem has one canonical folder containing its solution and notes:
 
-## Progress
+```text
+solutions/
+└── 0001-two-sum/
+    ├── solution.cpp
+    └── README.md
+topics/
+├── arrays.md
+├── strings.md
+├── prefix-sum.md
+├── searching-and-sorting.md
+├── recursion.md
+└── other.md
+TRACKING.md
+README.md
+```
 
-See [TRACKING.md](TRACKING.md) for imported problems and the historical backlog status.
+## Rules
 
-## Topic index
+1. **Manual workflow:** problems are added from the problem details and code supplied for review.
+2. **No duplicates:** use the LeetCode problem number as the canonical identity. Update the existing folder when revisiting a problem.
+3. **Keep approaches together:** add a better or optimized approach to the same problem folder with a clear label.
+4. **Accurate attribution:** preserve the submitted code; do not claim reconstructed code is the user's original solution.
+5. **Consistent documentation:** include a statement/summary, examples, constraints where useful, approach, complexity, and C++ code in each problem README.
+6. **Keep indexes current:** update the relevant topic index and `TRACKING.md` when adding a problem.
+
+## Topics
 
 - [Arrays](topics/arrays.md)
 - [Strings](topics/strings.md)
@@ -28,6 +43,6 @@ See [TRACKING.md](TRACKING.md) for imported problems and the historical backlog 
 - [Recursion](topics/recursion.md)
 - [Other Topics](topics/other.md)
 
-## Solution format
+## Progress
 
-Each problem folder contains a `solution.cpp` and a short README with the problem link, difficulty, topics, approach, and complexity. Keep explanations concise and beginner-friendly.
+See [TRACKING.md](TRACKING.md) for the list of problems currently added to this repository.
