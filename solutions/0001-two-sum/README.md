@@ -2,29 +2,87 @@
 
 - **Problem:** [LeetCode 1 — Two Sum](https://leetcode.com/problems/two-sum/)
 - **Difficulty:** Easy
-- **Problem topics:** Array, Hash Table
-- **Solution approach stored here:** Brute force using nested loops
+- **Topics:** Array, Hash Table
 - **Language:** C++
+- **Submitted approach:** Brute force (nested loops)
 
-## Problem summary
+## Problem statement
 
-Given an integer array `nums` and an integer `target`, return the indices of two distinct elements whose values add up to `target`. The problem guarantees exactly one valid answer, and the returned indices may be in either order. See the [official statement](https://leetcode.com/problems/two-sum/).
+You are given an integer array `nums` and an integer `target`. Find two different indices whose elements add up to `target`, and return those two indices.
+
+- Each index can be used only once.
+- The problem guarantees exactly one valid pair.
+- You may return the two indices in either order.
+
+## Constraints
+
+- `2 <= nums.length <= 10^4`
+- `-10^9 <= nums[i] <= 10^9`
+- `-10^9 <= target <= 10^9`
+- Exactly one valid answer exists.
 
 ## Examples
 
-- `nums = [2, 7, 11, 15], target = 9` → `[0, 1]`
-- `nums = [3, 2, 4], target = 6` → `[1, 2]`
-- `nums = [3, 3], target = 6` → `[0, 1]`
+**Example 1**
+
+```text
+Input: nums = [2,7,11,15], target = 9
+Output: [0,1]
+Explanation: nums[0] + nums[1] == 9, so the answer is [0,1].
+```
+
+**Example 2**
+
+```text
+Input: nums = [3,2,4], target = 6
+Output: [1,2]
+```
+
+**Example 3**
+
+```text
+Input: nums = [3,3], target = 6
+Output: [0,1]
+```
 
 ## Approach: Brute force
 
-Use two loops. For every index `i`, check each later index `j` starting at `i + 1`. If `nums[i] + nums[j] == target`, return `{i, j}`. Starting `j` at `i + 1` prevents using the same array element twice and avoids checking a pair twice.
+1. The outer loop chooses the first index `i`.
+2. The inner loop checks each later index `j), starting at `i + 1`.
+3. If `nums[i] + nums[j] == target`, return `{i, j}`.
+4. If no pair is found, return an empty vector. Under the stated problem guarantee, a valid pair exists.
 
-## Complexity
+Starting `j` at `i + 1` prevents reusing the same element and avoids checking the same pair twice.
 
-- **Time:** `O(n^2)` in the worst case, because pairs are checked with nested loops.
+## Complexity analysis
+
+- **Time:** `O(n^2)` in the worst case, because the nested loops examine pairs.
 - **Auxiliary space:** `O(1)`, excluding the returned two-index vector.
 
-## Notes
+## C++ solution
 
-This file preserves the brute-force approach provided by Aadil. LeetCode's follow-up asks for a solution faster than `O(n^2)`; a hash-map approach can be added later as a second approach in this same problem folder, without creating a duplicate problem entry.
+The code below preserves the brute-force solution provided by Aadil, with formatting cleaned up.
+
+```cpp
+class Solution {
+public:
+    vector<int> twoSum(vector<int>& nums, int target) {
+        for (int i = 0; i < nums.size() - 1; i++) {
+            for (int j = i + 1; j < nums.size(); j++) {
+                if (nums[i] + nums[j] == target) {
+                    return {i, j};
+                }
+            }
+        }
+        return {};
+    }
+};
+```
+
+## Follow-up
+
+The official problem asks whether you can design an algorithm faster than `O(n^2)`. A hash-map approach can be added later as a second approach in this same problem folder, without creating a duplicate entry.
+
+---
+
+*The statement above is a concise paraphrase for study notes. Refer to the [official LeetCode page](https://leetcode.com/problems/two-sum/) for the canonical statement and any changes.*
