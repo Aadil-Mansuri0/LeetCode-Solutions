@@ -1,28 +1,19 @@
-# Migration & Daily Progress Tracker
+# Problem Tracker
 
-## Imported into this repository
+## Added solutions
 
-- [x] [LeetCode 1 — Two Sum](solutions/0001-two-sum/README.md) — Easy; brute-force approach supplied by the user.
+- [x] [LeetCode 1 — Two Sum](solutions/0001-two-sum/README.md) — Easy · Array / Hash Table · Brute force
 
-**Verified solution entries in this repository: 1.**
+**Solutions currently in this repository: 1**
 
-## Historical backlog
+## Adding the next problem
 
-- [ ] Identify and verify the user's reported list of approximately **195 previously solved problems**
-- [ ] Import historical solutions incrementally, targeting **one verified problem per day**
-- [ ] Expand topic indexes from verified problem metadata
-- [ ] Check duplicate detection by problem number and canonical slug
+For each problem:
 
-The reported total of 195 is the user's stated count, not a verified list of 195 source files. One solution (Two Sum) has now been added from code supplied directly in this conversation. This does not mean all other historical submissions are available.
+1. Check whether its LeetCode problem number already exists.
+2. Review the problem details and the code supplied.
+3. Add or update the canonical problem folder.
+4. Update the appropriate topic index and this tracker.
+5. Verify the committed files on GitHub.
 
-## Rules for every new problem
-
-1. Match by LeetCode problem number and/or canonical title slug.
-2. If the problem already exists, update its existing folder instead of creating a duplicate.
-3. If the source code is unavailable, ask for it; do not invent or claim reconstructed code is the user's original submission.
-4. Update relevant topic indexes and this tracker after each addition.
-5. If a better approach is provided later, add it within the same problem folder and label the approach clearly.
-
-## Future submissions
-
-New accepted problems can be added from code/details the user provides. Automatic browser-extension sync has not been verified as active.
+This tracker counts entries in this repository only. It is not a claim about the total number of problems solved on LeetCode.
