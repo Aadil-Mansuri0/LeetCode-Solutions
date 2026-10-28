@@ -8,7 +8,7 @@
 
 ## Problem statement
 
-You are given an integer array `nums) of size `n`. For every index `i), define `start = max(0, i - nums[i])` and consider the subarray `nums[start ... i]`.
+You are given an integer array `nums` of size `n`. For every index `i`, define `start = max(0, i - nums[i])` and consider the subarray `nums[start ... i]`.
 
 Return the sum of all elements across these subarrays, adding each index's subarray sum to the final answer.
 
