@@ -10,7 +10,9 @@
 
 - [x] [LeetCode 1508 — Range Sum of Sorted Subarray Sums](solutions/1508-range-sum-of-sorted-subarray-sums/README.md) — Medium · Array / Prefix Sum / Sorting · Generate and sort all subarray sums
 
-**Solutions currently in this repository: 5**
+- [x] [LeetCode 3736 — Minimum Moves to Equal Array Elements III](solutions/3736-minimum-moves-to-equal-array-elements-iii/README.md) — Easy · Array / Math · Maximum value and total sum
+
+**Solutions currently in this repository: 6**
 
 ## Adding the next problem
 
