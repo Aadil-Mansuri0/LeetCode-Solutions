@@ -8,7 +8,9 @@
 
 - [x] [LeetCode 1822 — Sign of the Product of an Array](solutions/1822-sign-of-the-product-of-an-array/README.md) — Easy · Array / Math · Track product sign; early exit on zero
 
-**Solutions currently in this repository: 4**
+- [x] [LeetCode 1508 — Range Sum of Sorted Subarray Sums](solutions/1508-range-sum-of-sorted-subarray-sums/README.md) — Medium · Array / Prefix Sum / Sorting · Generate and sort all subarray sums
+
+**Solutions currently in this repository: 5**
 
 ## Adding the next problem
 
