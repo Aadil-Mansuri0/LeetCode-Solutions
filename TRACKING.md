@@ -6,7 +6,9 @@
 - [x] [LeetCode 1664 — Ways to Make a Fair Array](solutions/1664-ways-to-make-a-fair-array/README.md) — Medium · Array / Prefix Sum · Running sums
 - [x] [LeetCode 3427 — Sum of Variable Length Subarrays](solutions/3427-sum-of-variable-length-subarrays/README.md) — Easy · Array / Prefix Sum · Prefix sums; brute-force alternative preserved
 
-**Solutions currently in this repository: 3**
+- [x] [LeetCode 1822 — Sign of the Product of an Array](solutions/1822-sign-of-the-product-of-an-array/README.md) — Easy · Array / Math · Track product sign; early exit on zero
+
+**Solutions currently in this repository: 4**
 
 ## Adding the next problem
 
